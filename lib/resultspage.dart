@@ -28,7 +28,7 @@ class _ResultPageState extends State<ResultPage> {
   final int w;
 
   int calculatebmi() {
-    double _bmi = (w * w) / h;
+    double _bmi = w / ((h / 100) * (h / 100));
     return _bmi.round();
   }
 
